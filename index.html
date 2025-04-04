@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris con Controles Táctiles</title>
+    <style>
+        body { text-align: center; background-color: black; }
+        canvas { background-color: #111; display: block; margin: auto; }
+        .controls { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
+        .controls button {
+            background: none;
+            border: none;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<canvas id="tetris" width="200" height="400"></canvas>
+
+<!-- Controles táctiles -->
+<div id="controls" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+  <button id="leftBtn"><img src="img/left.png" alt="Left" width="50"></button>
+  <button id="rotateBtn"><img src="img/turn-retry.png" alt="Rotate" width="50"></button>
+  <button id="rightBtn"><img src="img/right.png" alt="Right" width="50"></button>
+  <button id="dropBtn"><img src="img/drop.png" alt="Drop" width="50"></button>
+  <button id="pauseBtn"><img src="img/pause.png" alt="Pause" width="50"></button>
+  <button id="unpauseBtn" style="display: none;"><img src="img/unpause.png" alt="Unpause" width="50"></button>
+</div>
+
+<!-- Botón de reinicio oculto por defecto -->
+<div id="gameOverControls" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  <button id="restartBtn"><img src="img/turn-retry.png" alt="Restart" width="60"></button>
+</div>
+    <script src="js/game.js"></script>
+</body>
+</html>

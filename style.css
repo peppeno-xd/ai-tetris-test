@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('img/scrolling-duplicated-bg.png');
+  background-repeat: repeat;
+  background-size: 25%; /* escala del fondo */
+  animation: scrollBackground 30s linear infinite;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% 100%;
+  }
+}
