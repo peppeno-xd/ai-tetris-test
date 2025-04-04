@@ -1,2 +1,5 @@
-# ai-tetris-test
-I made this with ChatGPT because i suck at coding and i dont really know anything of whats happening in the code
+# TETRIS TEST
+I made this with ChatGPT
+
+V1
+uhh yeah idk what else to say
